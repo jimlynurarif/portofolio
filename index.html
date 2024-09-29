@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimly</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    body {
+        font-family: 'Lato';
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        background-color: rgb(45, 201, 201);
+        text-align: center;
+        color: rgb(235, 227, 213);
+        padding: 4px;
+    }
+
+    nav {
+        background-color: rgb(45, 201, 165);
+        padding: 14px;
+        margin: 0;
+    }
+
+    nav ul {
+        padding: 0px;
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    nav ul li {
+        display:inline; /* buat hilangin disk logo */
+        padding: 0;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 0;
+    }
+
+    nav ul li:hover{
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7); /* Bayangan lebih besar dan lebih gelap saat hover */
+        filter: brightness(80%); /* Opsional, sedikit menggelapkan gambar */
+    }
+
+    article {
+        display: flex;
+        background-color: rgb(158, 239, 7);
+        align-items: center;
+        height: 100%;
+        color: rgb(65, 58, 58);
+    }
+
+    section {
+        background-color:rgba(17, 202, 119, 0.5);
+        flex: 7;
+        margin: 0;
+        height: 100%;
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    figure {
+        /* background-color: blue; */
+        flex: 3;
+        padding: 0 px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+    }
+
+    figure a{
+        padding: 0 px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+    }
+
+    /* h1, h2, h3, p {
+        background-color: green;
+        margin:
+    } */
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 970px) {
+        img {
+            width: 100%;
+        }
+    }
+    /* @media (min-width: 1200px) {
+        img {
+            width: 100%;
+        }
+    } */
+    @media (min-width: 568px) {
+        img {
+            width: 100px;
+        }
+    }
+
+    footer {
+        background-color: rgb(45, 201, 201);
+        margin: 0px;
+        padding: 10px;
+    }
+
+    footer p {
+        margin: 0px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+     Jimly
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#project">Contact</a></li>
+            <li><a href="blog">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <section>
+                <h3>Hello, It's Me</h3>
+                <h2>Jimly Nur Arif</h2>
+                <h3>And I'm a Website Developer</h3>
+                <p>This is my website portofolio, feel free to discovering</p>
+            </section>
+            <figure>
+                <img src="JimlyTanjungLesung2.jpg" alt="My Picture" style="width: 50%; border-radius: 1000px; box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);">
+                <!-- <figcaption>My Picture at Tanjung Lesung</figcaption> -->
+            </figure>
+        </article>
+
+        <article>
+            <section>
+                <h3>Project</h3>
+                <h2>Manga Tracker App</h2>
+                <h3>Help Manga Reader to Note Their Manga</h3>
+                <p>Stack: Python</p>
+            </section>
+            <figure>
+                <a href="https://github.com/jimlynurarif/MangaTraceker_RPL" target="_blank">
+                    <img src="MangaTracker.png" alt="My Picture" style="width: 50%; border-radius: 1000px; box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);">
+                </a>
+                <!-- <figcaption>My Picture at Tanjung Lesung</figcaption> -->
+            </figure>
+        </article>
+
+        <article>
+            <section>
+                <h3>Project</h3>
+                <h2>Wiki Race</h2>
+                <h3>Search Relation Between From One to Another Wiki Page</h3>
+                <p>Stack: HTML CSS JS Golang</p>
+            </section>
+            <figure>
+                <a href="https://github.com/jimlynurarif/Tubes2_Kami-Mau-Csharp-dan-Unity" target="_blank">
+                    <img src="WIKI.jpeg" alt="My Picture" style=" aspect-ratio: 1; width: 50%; border-radius: 1000px; box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);">
+                </a>
+                <!-- <figcaption>My Picture at Tanjung Lesung</figcaption> -->
+            </figure>
+        </article>
+
+        <article>
+            <section>
+                <h3>Project</h3>
+                <h2>Diamond Hunter Bot</h2>
+                <h3>Find Diamond As Much As Possible, The Best Or Nothing</h3>
+                <p>Stack: HTML CSS JS Python</p>
+            </section>
+            <figure>
+                <a href="https://github.com/jimlynurarif/Tubes1_ReelaIndoIndoIndo" target="_blank">
+                    <img src="diamond.jpg" alt="My Picture" style=" aspect-ratio: 1; width: 50%; border-radius: 1000px; box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);">
+                </a>
+                <!-- <figcaption>My Picture at Tanjung Lesung</figcaption> -->
+            </figure>
+        </article>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Jimly Nur Arif</p>
+    </footer>
+</body>
+</html>
